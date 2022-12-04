@@ -16,6 +16,7 @@
 		
 		<input type="submit" value="Зарегистрироваться" /><br />
 	</form>	
+	<br />
 	<form action="index.jsp" method="post">
 		<input type="submit" value="Вернуться на главную страницу" />
 	</form>	
