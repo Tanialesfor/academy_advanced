@@ -11,8 +11,8 @@
 	<form action="Controller" method="post">
 		<input type="hidden" name="command" value="forward" /> Enter Your name:<br />
 		<input type="text" name="name" value="" /><br /> Enter password:<br />
-		<input type="text" name="password" value="" /><br /> Enter Re-enter password:<br />
-		<input type="text" name="Re-enter password" value="" /><br />
+		<input type="password" name="password" value="" /><br /> Enter Re-enter password:<br />
+		<input type="password" name="Re-enter password" value="" /><br />
 		
 		<input type="submit" value="Зарегистрироваться" /><br />
 	</form>	

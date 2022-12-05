@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Вы успешно авторизировались</h1>
+<h1>Операция произведена успешно</h1>
 	<form action="index.jsp" method="post">
 		<input type="submit" value="Вернуться на главную страницу" />
 	</form>
