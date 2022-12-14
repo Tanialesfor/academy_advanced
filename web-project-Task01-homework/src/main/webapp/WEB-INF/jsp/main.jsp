@@ -11,5 +11,9 @@
 	<form action="index.jsp" method="post">
 		<input type="submit" value="Вернуться на главную страницу" />
 	</form>
-</body>
+	
+	</body>
+
 </html>
+
+

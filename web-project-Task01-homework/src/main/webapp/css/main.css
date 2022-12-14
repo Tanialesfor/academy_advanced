@@ -1,0 +1,147 @@
+@charset "UTF-8";
+html, body, div, form, label, fieldset, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+}
+
+html, body {
+    height: 100%;
+}
+
+body, input {
+    font-family: 'Segoe UI', 'Open Sans', Arial Unicode MS, Arial, sans-serif;
+}
+
+fieldset{
+    border: 0;
+}
+
+a {
+    color: #2069b4;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    outline: none;
+    color: #2a2e36;
+    border-bottom: 1px dotted;
+}
+form {
+    width: 18.75em;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    text-transform: uppercase;
+    color: #2a2e36;
+    margin: 0 0 4px 0;
+}
+
+form input[type="text"], input[type="password"] {
+    border: 1px solid #d9dbdd;
+    padding: 1em 0.625em;
+    outline: none;
+    font-size: 1em;
+    height: 40px;
+}
+
+form input[type="text"]:hover, input[type="password"]:hover,
+form input[type="text"]:focus, input[type="password"]:focus{
+    border: 1px solid #bbbdbe;
+}
+
+form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    padding: 1.085em;
+    height: 40px;
+    width: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    border: solid #eeefef;
+    border-width: 4px 0;
+    padding: 26px 0 25px;
+}
+.round {
+    border-radius: 0.3125em;
+    -moz-border-radius: 0.3125em;
+    -webkit-border-radius: 0.3125em;
+}
+
+.blue {
+    background-color: #2069b4;
+    color: white;
+}
+
+.blue:hover {
+    background-color: #5081b3;
+    color: white;
+}
+.action-button {
+    margin-top: 4px;
+    margin-bottom: 5px;
+      font-size: 12px;
+}
+
+.full-width-box {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.label-and-field {
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.logo {
+    align-self: center;
+    margin: 24px 0;
+}
+
+.title {
+    align-self: center;
+    margin-bottom: 26px;
+    font-size: 18px;
+    color: #9498a1;
+}
+.link {
+    display: none;
+    font-size: 12px;
+}
+
+.footer {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
