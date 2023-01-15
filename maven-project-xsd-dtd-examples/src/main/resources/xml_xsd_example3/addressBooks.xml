@@ -1,0 +1,16 @@
+<abook:adressBooks xmlns:abook="http://www.example.org/adressBooksSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/adressBooksSchema 
+adressBooksSchema.xsd ">
+
+	<person>
+		<login>login1</login>
+		<address>address1</address>
+	</person>
+
+	<person>
+		<login>login2</login>
+		<address>address2</address>
+	</person>
+	
+</abook:adressBooks>

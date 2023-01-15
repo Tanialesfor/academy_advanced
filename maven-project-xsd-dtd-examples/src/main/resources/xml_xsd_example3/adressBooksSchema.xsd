@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="http://www.example.org/adressBooksSchema"
+	xmlns:person="http://www.example.org/personSchema">
+
+	<import namespace='http://www.example.org/personSchema'
+		schemaLocation='personSchema.xsd' />
+
+	<element name="adressBooks">
+		<complexType>
+			<sequence>
+				<element name="person" type="person:PersonType" minOccurs="1"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+</schema>
