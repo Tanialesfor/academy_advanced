@@ -8,3 +8,8 @@
 <c:if test="${requestScope.presentation eq 'viewNews' }">
 	<c:import url="/WEB-INF/pages/tiles/viewNews.jsp" />
 </c:if>
+
+<c:if test="${requestScope.presentation eq 'addNews' }">
+	<c:import url="/WEB-INF/pages/tiles/addNews.jsp" />
+</c:if>
+

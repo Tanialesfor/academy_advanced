@@ -1,14 +1,22 @@
 package by.htp.ex.dao.impl;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import by.htp.ex.bean.NewUserInfo;
+import by.htp.ex.bean.News;
 import by.htp.ex.dao.DaoException;
 import by.htp.ex.dao.IUserDAO;
 
 public class UserDAO implements IUserDAO{
 
+	//List<NewUserInfo> userArray = new ArrayList<NewUserInfo>();
+
+	//userArray.add(new NewUserInfo ("Roman", "12.01.2000", "roman.2000@gmail.com","roman2000", "12012000"));
+	
+	
 	@Override
 	public boolean logination(String login, String password) throws DaoException {
 		
@@ -25,7 +33,7 @@ public class UserDAO implements IUserDAO{
 	}
 	
 	public String getRole(String login, String password) {
-		return "user";
+		return "admin";
 	}
 
 	@Override

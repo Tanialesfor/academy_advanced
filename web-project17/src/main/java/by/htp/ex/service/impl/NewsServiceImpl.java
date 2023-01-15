@@ -26,9 +26,13 @@ public class NewsServiceImpl implements INewsService{
 	}
 
 	@Override
-	public void update() {
+	public void update(News news) throws ServiceException {
 		// TODO Auto-generated method stub
-		
+		try {
+			newsDAO.updateNews(news);
+		} catch (NewsDAOException e) {
+			throw new ServiceException(e);
+		}
 	}
 
 	@Override
@@ -57,6 +61,16 @@ public class NewsServiceImpl implements INewsService{
 		} catch (NewsDAOException e) {
 			throw new ServiceException(e);
 		}
+	}
+
+	@Override
+	public void delete(String[] idNews) throws ServiceException {
+		try {
+			newsDAO.deleteNews(idNews);
+		} catch (NewsDAOException e) {
+			throw new ServiceException(e);
+		}
+		
 	}
 
 }

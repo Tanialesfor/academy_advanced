@@ -20,15 +20,19 @@ public class FrontController extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String commandName = request.getParameter("command");
-
-		Command command = provider.getCommand(commandName);
-		command.execute(request, response);
+		functionCommand(request, response);
 	}
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		functionCommand(request, response);
+	}
+	
+	private void functionCommand (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String commandName = request.getParameter("command");
+
+		Command command = provider.getCommand(commandName);
+		command.execute(request, response);
 	}
 
 }
