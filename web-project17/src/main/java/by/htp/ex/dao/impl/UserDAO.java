@@ -13,8 +13,10 @@ import by.htp.ex.dao.IUserDAO;
 public class UserDAO implements IUserDAO{
 
 	//List<NewUserInfo> userArray = new ArrayList<NewUserInfo>();
+	
+	
 
-	//userArray.add(new NewUserInfo ("Roman", "12.01.2000", "roman.2000@gmail.com","roman2000", "12012000"));
+	//userArray.add(new NewUserInfo ("Roman", "roman.2000@gmail.com","roman2000", "1112000"));
 	
 	
 	@Override
